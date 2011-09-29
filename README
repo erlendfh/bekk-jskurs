@@ -1,0 +1,41 @@
+- pratinga først
+  - Financial times på simulatoren
+  - Boston Globe
+  - LinkedIn
+  - Facebook, Google+
+  - Get appen
+  - Backbone
+  - Si 10 setninger om Javascript og html og css
+  - css-transitions
+  - vise jquerymobile og sencha
+  - i korteste tekst handler det om 3 telefonfamilier Android, iOS, WP7
+  - finnes andre også. Blackberry, MeeGoo, Amazon tablet?
+  - hva er det kuleste og beste?
+      - less
+      - zepto
+      - coffeescript
+  - hva gjør du med native og hva med html?
+  - media queries
+  - Debugging
+      - JSBin.com
+      - Firebug/Chrome
+      - jsconsole
+
+- appen
+  - målbildet iphone 5 todo
+  - styling med css
+
+- lenker til Javascript.
+
+Hvordan jobbe?
+1.
+SimpleHttpServer + Locatunnel
+
+2. 
+Kopiere innholdet over på en httpserver som du har tilgang til
+
+3.
+NodeJS.exe
+
+4.
+Kun lokalt. Window Resizer på Chrome. Firesizer på FireFox. Legg til 320x480

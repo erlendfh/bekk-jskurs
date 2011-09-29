@@ -1,9 +1,11 @@
 (function(){
 
-var Tasks = function(taskListElement, params) {
+function Tasks(taskListElement, params, persistence) {
 	var defaultParams = {
 		option : undefined
 	}
+	
+	this.persistence = persistence;
 	
 	params = $.extend(defaultParams, params);
 	
@@ -13,73 +15,36 @@ var Tasks = function(taskListElement, params) {
 	}	
 	
 	taskListElement = typeof taskListElement == 'object' ? taskListElement : document.getElementById(taskListElement);
-	taskListElement = $(taskListElement);
+	this.taskListElement = $(taskListElement);
 	
-	var that = this;
+	this.taskListElement.append(this.renderTasksHTML());	
+}
+
+$.extend(Tasks.prototype, {
+  addTask: function(task) {
+    this.persistence.create(task);
+		this.taskListElement.append(renderTaskHTML(task));	
+	},
 	
-	var tasksArray = [
-		{text : "Start", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "...", done : false},
-		{text : "End", done : false}
-	];
+  removeTask: function(taskId) {
+		this.persistence.destroy(taskId);
+	},
 	
-	var init = function() {
-		taskListElement.append(renderTasksHTML(tasksArray));
-	}
-	
-	that.addTask = function(task) {
-		tasksArray.push(task);
-		taskListElement.append(renderTaskHTML(task, tasksArray.length + 1));	
-	};
-	
-	that.removeTask = function(taskIndex) {
-		tasksArray.splice(taskIndex, 1);
-	};
-	
-	var renderTasksHTML = function(tasks) {
+	renderTasksHTML: function() {
 		var html = "";
-		
-		tasks.forEach(function(task, idx){
-			html += renderTaskHTML(task, idx);
-		});	
+		var that = this;
+		this.persistence.findAll().forEach(function(task) {
+			html += that.renderTaskHTML(task);
+		});
 			
 		return html;			
-	};
+	},
 	
-	var renderTaskHTML = function(task, idx) {
-		return '<li value=' + idx +'>' + task.text + '</li>';
-	};
+	renderTaskHTML: function(task) {
+		return '<li value=' + task.id +'>' + task.text + '</li>';
+	}
 	
-	init();
-}
+});
 
 window.reminders = window.reminders || {};
 window.reminders.Tasks = Tasks;

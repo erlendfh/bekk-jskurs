@@ -2,12 +2,13 @@
 
 function Tasks(taskListElement, params, persistence) {
 	var defaultParams = {
-		option : undefined
+		inputField : undefined
 	}
 	
-	this.persistence = persistence;
-	
 	params = $.extend(defaultParams, params);
+		
+	this.persistence = persistence;
+	this.inputField = $(params.inputField);
 	
 	if(taskListElement === undefined) {
 		console.log("A list element must by spesified");
@@ -18,12 +19,20 @@ function Tasks(taskListElement, params, persistence) {
 	this.taskListElement = $(taskListElement);
 	
 	this.taskListElement.append(this.renderTasksHTML());	
+	
+	var that = this;
+	this.inputField.bind('blur', function(event) {
+		that.addTask({
+			text: event.srcElement.value,
+			done: false
+		});
+	});
 }
 
 $.extend(Tasks.prototype, {
   addTask: function(task) {
     this.persistence.create(task);
-		this.taskListElement.append(renderTaskHTML(task));	
+		this.taskListElement.append(this.renderTaskHTML(task));	
 	},
 	
   removeTask: function(taskId) {

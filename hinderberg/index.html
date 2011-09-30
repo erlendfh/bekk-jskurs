@@ -25,7 +25,8 @@
 			</header>
 			<section id="main">
 				<div id="scroller">
-	        <ul id="tasks">           
+	        <ul id="tasks"> 
+	        	<li><input id="new-task-input" type="text" /></li>          
 	        </ul>
 	    	</div>
 			</section>
@@ -48,7 +49,7 @@
 				  text: "task sdakf jsdlkf j",
 				  done: false
 				});
-				var tasks = new reminders.Tasks('tasks', {}, persistence);
+				var tasks = new reminders.Tasks('tasks', {inputField : "#new-task-input"}, persistence);
 			});	
 
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);

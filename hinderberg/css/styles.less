@@ -14,21 +14,23 @@ html,body {
 
 body {		
 	background-image: url('../images/wrapper-background.png');
-	margin: 0 auto;
-	padding: 0;
-	width: 90%;
 	overflow: hidden;
 	color: @main-font-color;
 }
 
 #wrapper {
+	width: 90%;
+	height: 90%;
+  margin: 0 auto;
+  top: 30px;
+  bottom: 30px;
 	position: relative;
+	
 	background: url('../images/content-background.png') #f3f3ee;	
 	border-radius: 4px;
   -moz-border-radius:4px; 
   -webkit-border-radius:4px; 
-  height: 94%;
-  margin: 30px 0;
+
 	overflow: hidden;
 	
 	header {
@@ -61,6 +63,12 @@ body {
 		bottom: 35px; 
 		width: 97%;
 		border: 1px solid #cccccc;
+		
+		input {
+			border: none;
+			font-size: 16px;
+			background: transparent;
+		}
 	    
 		#scroller {
 			-webkit-touch-callout: none;

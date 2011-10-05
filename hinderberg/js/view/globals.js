@@ -12,7 +12,7 @@
 		
 		allowFormsInIscroll();
 	}
-	
+		
 	window.reminders = window.reminders || {};
 	window.reminders.globals = new Globals();
 	

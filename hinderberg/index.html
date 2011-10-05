@@ -8,10 +8,11 @@
 		<meta name="robots" content="" />
 		
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
+    	<meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="format-detection" content="telephone=no" />    
+    	<link rel="apple-touch-icon-precomposed" href="" />
 		
-		<title></title>
+		<title>Reminders</title>
 
 		<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 		<script src="js/frameworks/less-1.1.3.min.js" type="text/javascript"></script>
@@ -26,7 +27,7 @@
 			<section id="main">
 				<div id="scroller">
 	        <ul id="tasks"> 
-	        	<li><input id="new-task-input" type="text" /></li>          
+	        	<li><input id="new-task-input" placeholder="...." type="text" /></li>          
 	        </ul>
 	    	</div>
 			</section>
@@ -42,18 +43,29 @@
 		<script src="js/view/persistence.js"></script>
 		
 		<script>
+
 			$(document).ready(function() {
 				var scroll = new iScroll('main', {checkDOMChanges : true});
 				var persistence = new reminders.Persistence("tasks");
-				persistence.create({
-				  text: "task sdakf jsdlkf j",
-				  done: false
-				});
 				var tasks = new reminders.Tasks('tasks', {inputField : "#new-task-input"}, persistence);
+
 			});	
 
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-		</script>
 			
+			var addToHomeConfig = {
+				animationIn: 'bubble',
+				animationOut: 'drop',
+				lifespan:10000,
+				expire:2,
+				touchIcon:true
+			}
+			
+			if ('standalone' in navigator && !navigator.standalone && (/iphone|ipod|ipad/gi).test(navigator.platform) && (/Safari/i).test(navigator.appVersion)) {
+				document.write('<link rel="stylesheet" href="js/frameworks/add2home.css">');
+				document.write('<script type="application/javascript" src="js/frameworks/add2home.js"><\/s' + 'cript>');
+			}
+			
+		</script>	
 	</body>
 </html>

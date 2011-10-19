@@ -1,5 +1,10 @@
+Huskeliste:
+ - Innstaller på simulator for presantør:
+   - Financial times (kan også innstalleres under presentasjon)
+   - 
+
 - pratinga først
-  - Financial times på simulatoren
+  - Financial times på simulatoren - app.ft.com
   - Boston Globe
   - LinkedIn
   - Facebook, Google+
@@ -35,7 +40,26 @@ SimpleHttpServer + Locatunnel
 Kopiere innholdet over på en httpserver som du har tilgang til
 
 3.
-NodeJS.exe
+Mongoose
 
 4.
 Kun lokalt. Window Resizer på Chrome. Firesizer på FireFox. Legg til 320x480
+
+
+Oppgaver:
+
+1. Oppsett
+1.1. Sett opp prosjektet med rammeverk
+1.2. Lag en html liste og vis den i en simulator eller på din Android eller iPhone
+
+2. Javascript
+2.1. Fyll listen med fiktivt innhold
+2.2. Legg til en ny oppgave i listen
+2.3. Fjern en oppgave fra listen
+2.4. Rediger en oppgave i listen
+
+3. Localstorage
+3.1. Lag en klasse som kan brukes for å lagre oppgavene i localstorage
+
+4. CSS
+4.1.

@@ -1,5 +1,4 @@
 (function() {
-
   function Tasks(taskListElement, params, persistence) {
     var defaultParams = {
       inputField: undefined
@@ -24,10 +23,19 @@
     this.inputField.bind('blur', function(event) {
       that.addTask({
         text: event.srcElement.value,
-        done: false
+        done: false,
+        date: {}
       });
 
       event.srcElement.value = '';
+    });
+
+    this.taskListElement.delegate('input', reminders.globals.touchEvent, function() {
+      var checkbox = $(this);
+      var checked = checkbox.is(':checked');
+      var task = that.persistence.find(checkbox.parent().attr('value'));
+      task.done = checked;
+      that.persistence.update(task);
     });
   }
 
@@ -52,7 +60,8 @@
     },
 
     renderTaskHTML: function(task) {
-      return '<li value=' + task.id + '>' + task.text + '</li>';
+      var checked = task.done ? 'checked="checked"' : "";
+      return '<li value=' + task.id + '><input type="checkbox" name="done" ' + checked +  ' />' + task.text + '</li>';
     }
 
   });

@@ -25,11 +25,15 @@
 				
 			</header>
 			<section id="main">
-				<div id="scroller">
-	        <ul id="tasks"> 
-	        	<li><input id="new-task-input" placeholder="...." type="text" /></li>          
-	        </ul>
-	    	</div>
+				<div id="page">
+					<div id="scroller">
+		        		<ul id="tasks"> 
+		        			<li><input id="new-task-input" placeholder="...." type="text" /></li>          
+		        		</ul>
+		    		</div>
+	    		</div>
+	    		<div id="page" style="display:none">
+	    		</div>
 			</section>
 			
 			<footer>
@@ -45,7 +49,7 @@
 		<script>
 
 			$(document).ready(function() {
-				var scroll = new iScroll('main', {checkDOMChanges : true});
+				var scroll = new iScroll('page', {checkDOMChanges : true});
 				var persistence = new reminders.Persistence("tasks");
 				var tasks = new reminders.Tasks('tasks', {inputField : "#new-task-input"}, persistence);
 

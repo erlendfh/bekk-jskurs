@@ -49,9 +49,8 @@
 		<script>
 
 			$(document).ready(function() {
-				var scroll = new iScroll('page', {checkDOMChanges : true});
-				var persistence = new reminders.Persistence("tasks");
-				var tasks = new reminders.Tasks('tasks', {inputField : "#new-task-input"}, persistence);
+        var persistence = new reminders.Persistence("tasks");
+        var tasks = new reminders.Tasks('#tasks', {inputField : "#new-task-input"}, persistence);
 
 			});	
 
@@ -60,9 +59,9 @@
 			var addToHomeConfig = {
 				animationIn: 'bubble',
 				animationOut: 'drop',
-				lifespan:10000,
-				expire:2,
-				touchIcon:true
+				lifespan: 10000,
+				expire: 2,
+				touchIcon: true
 			}
 			
 			if ('standalone' in navigator && !navigator.standalone && (/iphone|ipod|ipad/gi).test(navigator.platform) && (/Safari/i).test(navigator.appVersion)) {

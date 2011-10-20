@@ -14,7 +14,6 @@
       return;
     }
 
-    taskListElement = typeof taskListElement == 'object' ? taskListElement : document.getElementById(taskListElement);
     this.taskListElement = $(taskListElement);
 
     this.taskListElement.append(this.renderTasksHTML());
@@ -60,8 +59,8 @@
     },
 
     renderTaskHTML: function(task) {
-      var checked = task.done ? 'checked="checked"' : "";
-      return '<li value=' + task.id + '><input type="checkbox" name="done" ' + checked +  ' />' + task.text + '</li>';
+      var checked = task.done ? 'checked' : "";
+      return '<li value=' + task.id + '><input type="checkbox" name="done" ' + checked +  ' value="1" />' + task.text + '</li>';
     }
 
   });

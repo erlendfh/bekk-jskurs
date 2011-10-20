@@ -46,6 +46,45 @@ Mongoose
 Kun lokalt. Window Resizer på Chrome. Firesizer på FireFox. Legg til 320x480
 
 
+Miljøoppsett:
+
+Koden
+
+Koden ligger på github. Gå til https://github.com/erlendfh/bekk-jskurs/downloads og velg å laste ned som zip eller tar.gz
+Pakk ut koden i ønsket mappe på lokal maskin
+
+
+Server:
+
+Mongoose er en enkel webserver for å tilgjengeliggjøre html-filer. Gå til http://code.google.com/p/mongoose/ . I venstre menyen ligger Downloads. Last ned exe-for windows eller .tgz for mac/linux.
+
+	Windows:
+		Kjør exe-filen
+
+	Mac:
+		Etter å ha pakket ut .tgz-filen til ønsket mappe, gå til katalogen og kjør kommandoen: make mac
+		Da skapes det en eksekverbar-fil som kalles mongoose. Kopier denne til samme katalog som du kopierte ut koden og kjør deretter opp servere med kommandoen: ./mongoose
+		Gå nå til http://localhost:8080 i en webkit nettleser av typen safari eller chrome for å se hvordan applikasjonen ser ut så langt og for å komme i gang med oppgavene.
+		
+	Linux/Bsd:
+		Etter å ha pakket ut .tgz-filen til ønsket mappe, gå til katalogen og kjør kommandoen: make linux eller make bsd
+		Da skapes det en eksekverbar-fil som kalles mongoose. Kopier denne til samme katalog som du kopierte ut koden og kjør deretter opp servere med kommandoen: ./mongoose
+		Gå nå til http://localhost:8080 i en webkit nettleser av typen safari eller chrome for å se hvordan applikasjonen ser ut så langt og for å komme i gang med oppgavene.		
+		
+
+Teste ut applikasjonen på din mobil:
+	Mac/Linux:
+		Gå til http://progrium.com/localtunnel/ og følg oppskriften for hvordan installere.
+	Windows:
+		http://www.stunnel.org/
+	
+		
+		
+
+
+
+
+
 Oppgaver:
 
 1. Oppsett

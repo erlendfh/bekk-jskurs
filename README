@@ -56,32 +56,13 @@ Pakk ut koden i ønsket mappe på lokal maskin
 
 Server:
 
-Mongoose er en enkel webserver for å tilgjengeliggjøre html-filer. Gå til http://code.google.com/p/mongoose/ . I venstre menyen ligger Downloads. Last ned exe-for windows eller .tgz for mac/linux.
+For å vise innholdet av applikasjonen enten lokalt eller på mobiltelefonen, så er det kjekt å bruke Opera og applikasjonen Web Server. Via den kan man definere hvilken mappe man vil serve innhold fra, og deretter kan man enten se resultatet lokalt på din datamaskin i en webkit-nettleser av typen Chrome eller Safari (webkit) eller på din mobiltelefon. 
 
-	Windows:
-		Kjør exe-filen
-
-	Mac:
-		Etter å ha pakket ut .tgz-filen til ønsket mappe, gå til katalogen og kjør kommandoen: make mac
-		Da skapes det en eksekverbar-fil som kalles mongoose. Kopier denne til samme katalog som du kopierte ut koden og kjør deretter opp serveren med kommandoen: ./mongoose
-		Mongoose server innholdet fra mappen den kjøres fra.
-		Gå nå til http://localhost:8080 i en webkit nettleser av typen safari eller chrome for å se hvordan applikasjonen ser ut så langt og for å komme i gang med oppgavene.
-		
-	Linux/Bsd:
-		Etter å ha pakket ut .tgz-filen til ønsket mappe, gå til katalogen og kjør kommandoen: make linux eller make bsd
-		Da skapes det en eksekverbar-fil som kalles mongoose. Kopier denne til samme katalog som du kopierte ut koden og kjør deretter opp servere med kommandoen: ./mongoose
-		Gå nå til http://localhost:8080 i en webkit nettleser av typen safari eller chrome for å se hvordan applikasjonen ser ut så langt og for å komme i gang med oppgavene.		
-		
-
-Teste ut applikasjonen på din mobil:
-	Mac/Linux:
-		Gå til http://progrium.com/localtunnel/ og følg oppskriften for hvordan installere denne applikasjonen. 
-		Etter at localtunnel er installert, kjør opp den på samme porten som mongoose kjører på. Da får man en url man kan browse til på mobilen og dermed teste løsningen.
-	Windows:
-		http://www.stunnel.org/
-		
-		
-		
+1. Gå til http://opera.no og installer nettleseren om du ikke allerede har denne på din maskin.
+2. Gå til http://unite.opera.com/application/192/ installer applikasjonen Web Server. Du må først lage en konto og registre deg, men det går kjapt unna.
+3. Følg oppsett og velg hvilken katalog Web Server skal serve innholdet fra. Velg mappen hinderberg som ligger i katalogen som koden ble pakket ut til. 
+4. Etter installasjonen er ferdig, starter Web Server opp. Innholdet på din lokal web server blir nå listet opp. På høyre side vises url'en til din applikasjon som du kan browse deg til på din lokale maskin eller på din mobiltelefon. Browseren skal være av en webkit-browser som for eksempel Chrome eller Safari.
+5. Du er nå klar for å sette i gang med oppgavene.
 		
 	
 		

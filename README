@@ -63,7 +63,8 @@ Mongoose er en enkel webserver for å tilgjengeliggjøre html-filer. Gå til htt
 
 	Mac:
 		Etter å ha pakket ut .tgz-filen til ønsket mappe, gå til katalogen og kjør kommandoen: make mac
-		Da skapes det en eksekverbar-fil som kalles mongoose. Kopier denne til samme katalog som du kopierte ut koden og kjør deretter opp servere med kommandoen: ./mongoose
+		Da skapes det en eksekverbar-fil som kalles mongoose. Kopier denne til samme katalog som du kopierte ut koden og kjør deretter opp serveren med kommandoen: ./mongoose
+		Mongoose server innholdet fra mappen den kjøres fra.
 		Gå nå til http://localhost:8080 i en webkit nettleser av typen safari eller chrome for å se hvordan applikasjonen ser ut så langt og for å komme i gang med oppgavene.
 		
 	Linux/Bsd:
@@ -74,9 +75,14 @@ Mongoose er en enkel webserver for å tilgjengeliggjøre html-filer. Gå til htt
 
 Teste ut applikasjonen på din mobil:
 	Mac/Linux:
-		Gå til http://progrium.com/localtunnel/ og følg oppskriften for hvordan installere.
+		Gå til http://progrium.com/localtunnel/ og følg oppskriften for hvordan installere denne applikasjonen. 
+		Etter at localtunnel er installert, kjør opp den på samme porten som mongoose kjører på. Da får man en url man kan browse til på mobilen og dermed teste løsningen.
 	Windows:
 		http://www.stunnel.org/
+		
+		
+		
+		
 	
 		
 		

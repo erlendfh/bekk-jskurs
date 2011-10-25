@@ -41,17 +41,18 @@
 			</footer>
 		</div>
 		<script src="js/frameworks/zepto.min.js"></script>
-		<script src="js/frameworks/iscroll.js"></script>
 		<script src="js/view/globals.js"></script>
 		<script src="js/view/tasks.js"></script>
 		<script src="js/view/persistence.js"></script>
 		
 		<script>
-
 			$(document).ready(function() {
-        var persistence = new reminders.Persistence("tasks");
-        var tasks = new reminders.Tasks('#tasks', {inputField : "#new-task-input"}, persistence);
-
+        		var persistence = new reminders.Persistence("tasks");
+        		var tasks = new reminders.Tasks({
+	        		taskListElement: '#tasks',
+	        		persistence: persistence,
+	        		inputField : "#new-task-input"
+	        	});
 			});	
 
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -68,7 +69,6 @@
 				document.write('<link rel="stylesheet" href="js/frameworks/add2home.css">');
 				document.write('<script type="application/javascript" src="js/frameworks/add2home.js"><\/s' + 'cript>');
 			}
-			
 		</script>	
 	</body>
 </html>

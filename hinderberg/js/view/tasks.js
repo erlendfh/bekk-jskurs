@@ -13,7 +13,6 @@
     this.taskListElement = $(params.taskListElement);
 
     this.render();
-
     this.initializeBindings();
   }
 

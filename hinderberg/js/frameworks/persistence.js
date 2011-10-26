@@ -56,7 +56,6 @@
     }
   });
 
-
   window.reminders = window.reminders || {};
   window.reminders.Persistence = Persistence;
 })();

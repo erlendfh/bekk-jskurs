@@ -17,8 +17,9 @@
 		<title>Reminders</title>
 
 	</head>
-	<body>		
-		<input id="new-task" placeholder="...." type="text" />			
+	<body>	
+		
+		<div id="new-task"><input placeholder="...." type="text" /></div>		
 		<ul id="tasks"></ul>
 	
 		<script src="js/frameworks/zepto.js"></script>
@@ -31,7 +32,7 @@
         		var tasks = new reminders.Tasks({
 	        		taskListElement: '#tasks',
 	        		persistence: persistence,
-	        		inputField : "#new-task"
+	        		inputField : "#new-task input"
 	        	});
 			});	
 		</script>	

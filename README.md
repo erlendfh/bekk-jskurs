@@ -12,20 +12,14 @@ For 책 vise innholdet av applikasjonen enten lokalt eller p책 mobiltelefonen, s�
 5. Du er n책 klar for 책 sette i gang med oppgavene.
 		
 # Oppgaver
-Last ned [koden](https://github.com/erlendfh/bekk-jskurs/zipball/master) 
-
-1. Oppsett
-1.1. Sett opp prosjektet med rammeverk
-1.2. Lag en html liste og vis den i en simulator eller p책 din Android eller iPhone
-
-2. Javascript
-2.1. Fyll listen med fiktivt innhold
-2.2. Legg til en ny oppgave i listen
-2.3. Fjern en oppgave fra listen
-2.4. Rediger en oppgave i listen
-
-3. Localstorage
-3.1. Lag en klasse som kan brukes for 책 lagre oppgavene i localstorage
-
-4. CSS
-4.1.
+1. Last ned [koden](https://github.com/erlendfh/bekk-jskurs/zipball/master) 
+2.  Sett opp prosjektet med rammeverk
+3. Lag en html liste og vis den i en simulator eller p책 din Android eller iPhone
+4. Javascript
+5. Fyll listen med fiktivt innhold
+6. Legg til en ny oppgave i listen
+7. Fjern en oppgave fra listen
+8. Rediger en oppgave i listen
+9. Localstorage
+10. Lag en klasse som kan brukes for 책 lagre oppgavene i localstorage
+11. CSS

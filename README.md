@@ -1,6 +1,7 @@
 # Last but not least, Mobile First.
- Dine første steg mot en mobil fremtid på www
- Slides kan du se [her](http://erlendfh.github.com/bekk-jskurs).
+Dine første steg mot en mobil fremtid på www
+
+Slides kan du se [her](http://erlendfh.github.com/bekk-jskurs).
 
 ## Forberedelser
 

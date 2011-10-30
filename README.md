@@ -59,4 +59,4 @@ Lag en kul animasjon som gjør at brukeren får følelsen av oppgaven blir borte
 
 ## Oppgave 8
 
-Lag det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en checkbox.
+Gjør det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en checkbox. Persister dette ved hjelp av persiastence.js.

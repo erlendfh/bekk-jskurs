@@ -15,6 +15,8 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 		
 # Oppgaver
 
+Før du begynner med oppgavene kan det være lurt å se kjapt igjennom http://slides.html5rocks.com/
+
 ## Overordned oppgave
 
 I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS slik at den blir enkel å forstå og bruke på mobil
@@ -44,6 +46,8 @@ Vi ønsker at du i denne oppgaven legger til animasjoner på legg til oppgaver s
 $('div').anim({ translate3d: '10px, 20px, 30px'}, 2, 'ease-out 1ms', function() {
 	/* hva skal gjøres når animasjonen er ferdig */
 });
+
+PS. Ved å se i koden til Zepto.js kan man se at animasjonene gjøres ved hjelp av -webkit-transform. Det vil si at alt som er mulig ved hjelp av denne CSS attributten er også mulig å gjøre i anim funksjonen. På http://24ways.org/2009/going-nuts-with-css-transitions skrives det om hvordan CSS transitions fungerer.  
 
 ## Oppgave 6
 

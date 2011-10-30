@@ -17,6 +17,39 @@
   }
 
   $.extend(Tasks.prototype, {
+
+    initializeBindings: function () {
+      var that = this;
+      this.inputField.bind('blur', function(event) {
+        that.addTask({
+          text: event.srcElement.value,
+          done: false,
+          date: {}
+        });
+
+        event.srcElement.value = '';
+      });
+
+      this.taskListElement.delegate('input', 'change', function() {
+        var checkbox = $(this);
+        var checked = checkbox.is(':checked');
+        var task = that.persistence.find(checkbox.parent().attr('value'));
+        task.done = checked;
+        that.persistence.update(task);
+      });
+
+      this.taskListElement.delegate('li', 'swipeRight', function() {
+        var listElement = $(this);
+
+        listElement.anim({
+          translate3d: listElement.width() + 'px, 0px, 0px'
+          }, 0.5, 'ease-in-out 1ms', function() {
+            that.persistence.destroy(listElement.attr('value'));
+            that.render(); 
+          });
+      });
+    },
+    
     addTask: function(task) {
       var tl = this.taskListElement;
       this.persistence.create(task);
@@ -46,39 +79,6 @@
     taskHTML: function(task) {
       var checked = task.done ? 'checked' : "";
       return '<li value=' + task.id + '><input type="checkbox" name="done" ' + checked +  ' value="1" />' + task.text + '</li>';
-    },
-
-    initializeBindings: function () {
-      var that = this;
-      console.log(this.inputField);
-      this.inputField.bind('blur', function(event) {
-        that.addTask({
-          text: event.srcElement.value,
-          done: false,
-          date: {}
-        });
-
-        event.srcElement.value = '';
-      });
-
-      this.taskListElement.delegate('input', 'change', function() {
-        var checkbox = $(this);
-        var checked = checkbox.is(':checked');
-        var task = that.persistence.find(checkbox.parent().attr('value'));
-        task.done = checked;
-        that.persistence.update(task);
-      });
-
-      this.taskListElement.delegate('li', 'swipeRight', function() {
-        var listElement = $(this);
-
-        listElement.anim({
-          translate3d: listElement.width() + 'px, 0px, 0px'
-          }, 0.5, 'ease-in-out 1ms', function() {
-            that.persistence.destroy(listElement.attr('value'));
-            that.render(); 
-          });
-      });
     }
   });
 

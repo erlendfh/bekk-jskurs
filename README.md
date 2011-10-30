@@ -5,12 +5,12 @@ Slides kan du se [her](http://erlendfh.github.com/bekk-jskurs).
 
 ## Forberedelser
 
-For å vise innholdet av applikasjonen enten lokalt eller på mobiltelefonen, så er det kjekt å bruke Opera og applikasjonen Web Server. Via den kan man definere hvilken mappe man vil serve innhold fra, og deretter kan man enten se resultatet lokalt på din datamaskin i en webkit-nettleser av typen Chrome eller Safari (webkit) eller på din mobiltelefon. 
+For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på din mobiltelefonen, så er det kjekt å bruke Opera og applikasjonen Web Server. Via den kan man definere hvilken mappe man vil serve innhold fra, og deretter kan man enten se resultatet lokalt på din datamaskin i en webkit-nettleser av typen Chrome eller Safari eller på din mobiltelefon. 
 
 1. Gå til http://opera.no og installer nettleseren om du ikke allerede har denne på din maskin.
 2. Gå til http://unite.opera.com/application/192/ installer applikasjonen Web Server. Du må først lage en konto og registre deg, men det går kjapt unna.
 3. Følg oppsett og velg hvilken katalog Web Server skal serve innholdet fra. Velg mappen oppgaver som ligger i katalogen som koden ble pakket ut til. 
-4. Etter installasjonen er ferdig, starter Web Server opp. Innholdet på din lokal web server blir nå listet opp. På høyre side vises url'en til din applikasjon som du kan browse deg til på din lokale maskin eller på din mobiltelefon. Browseren skal være av en webkit-browser som for eksempel Chrome eller Safari.
+4. Etter at installasjonen er ferdig, starter Web Server opp. Innholdet på din lokale web server blir nå listet opp. På høyre side vises url'en til din applikasjon som du kan browse deg til på din lokale maskin eller på din mobiltelefon. Browseren skal være en webkit-browser som for eksempel Chrome eller Safari.
 5. Du er nå klar for å sette i gang med oppgavene.
 		
 # Oppgaver

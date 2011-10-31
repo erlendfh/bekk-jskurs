@@ -47,6 +47,9 @@ Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulato
 I tillegg har man ol- tag'en som står for ordered list hvor elementer i lista legges til ved å bruke li- tag'en.
 Mer om lister i HTML kan leses på http://www.w3schools.com/html/html_lists.asp.
 
+Hvis du testet app'en på en mobiltelefon i oppgave 3, la du sikkert merke til app'en ikke var spesielt tilpasset skjermen. Dette kan forbedres gjennom meta-tags. 
+På http://www.html5rocks.com/en/mobile/mobifying.html#toc-meta kan du lese mer om hvilke meta-tags som er tilgjengelige og hva de brukes til.
+
 ## Oppgave 5
 
 Ved hjelp av task.js, persistence.js, zepto.js filene skal du gjøre det mulig for brukere å legge til oppgaver i ToDo-listen

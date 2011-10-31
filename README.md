@@ -23,7 +23,8 @@ I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS
 
 ## Oppgave 1
 
-Sett opp applikasjonen ved hjelp av forberedelsene beskrevet ovenfor.
+Last ned [oppgavekoden](https://github.com/erlendfh/bekk-jskurs/zipball/master) (zip)
+Pakk den ut i katalogen du valgte å serve Opera-webserveren fra.
 
 ## Oppgave 2
 

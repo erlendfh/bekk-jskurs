@@ -36,7 +36,16 @@ Verifiser at teksten "Hei, jeg skal bli en mobilside når jeg blir stor" står s
 
 ## Oppgave 4
 
-Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulator eller mobilenhet av typen Android eller iPhone
+Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulator eller mobilenhet av typen Android eller iPhone. En statisk liste i HTML lages ved å bruke <ul> - tag'en som står for unordered list. Hvert element i lista legges til ved å bruke <li> - tag'en. En liste kan for eksempel se slik ut:
+	
+	<ul>
+		<li>bil</li>
+		<li>båt</li>
+		<li>fly</li>
+	</ul>
+	
+I tillegg har man <ol> - tag'en som står for ordered list hvor elementer i lista legges til ved å bruke <li> - tag'en.
+Mer om lister i HTML kan leses på http://www.w3schools.com/html/html_lists.asp.
 
 ## Oppgave 5
 

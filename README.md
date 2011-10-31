@@ -30,17 +30,22 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 
 ## Oppgave 3
 
-Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulator eller mobilenhet av typen Android eller iPhone
+Åpne url'en Opera har opprettet for deg på en mobil. (Oppgitt i "Single-click login")
+Verifiser at teksten "Hei, jeg skal bli en mobilside når jeg blir stor" står skrevet.
 
 ## Oppgave 4
 
-Ved hjelp av task.js, persistence.js, zepto.js filene skal du gjøre det mulig for brukere å legge til oppgaver i ToDo-listen
+Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulator eller mobilenhet av typen Android eller iPhone
 
 ## Oppgave 5
 
-Nå som brukeren kan legge til oppgaver ønsker vi at brukeren skal kunne se oppgavene som blir lagt til i stedet for den dynamiske listen. Lag derfor en dynamisk liste som blir fyllt med oppgavene som ligger lagret i localstorage ved hjelp av persistence.js
+Ved hjelp av task.js, persistence.js, zepto.js filene skal du gjøre det mulig for brukere å legge til oppgaver i ToDo-listen
 
 ## Oppgave 6
+
+Nå som brukeren kan legge til oppgaver ønsker vi at brukeren skal kunne se oppgavene som blir lagt til i stedet for den dynamiske listen. Lag derfor en dynamisk liste som blir fyllt med oppgavene som ligger lagret i localstorage ved hjelp av persistence.js
+
+## Oppgave 7
 
 En viktig del av utvikling for mobil er å lage applikasjoner som er enkle og brukbare. Animasjoner gjør både applikasjonen mer attraktiv og gir brukeren tilbakemelding om at ting skjer når han trykker.
 
@@ -52,14 +57,14 @@ $('div').anim({ translate3d: '10px, 20px, 30px'}, 2, 'ease-out 1ms', function() 
 
 PS. Ved å se i koden til Zepto.js kan man se at animasjonene gjøres ved hjelp av -webkit-transform. Det vil si at alt som er mulig ved hjelp av denne CSS attributten er også mulig å gjøre i anim funksjonen. På http://24ways.org/2009/going-nuts-with-css-transitions skrives det om hvordan CSS transitions fungerer.  
 
-## Oppgave 7
+## Oppgave 8
 
 Det kan være at brukeren skriver feil når han/hun legger til en oppgave og ønsker å slette oppgaven. Lag denne funksjonen ved å bruke task.js, persistence.js, zepto.js. Her skal man bruke events som er tilgjengelig. For eksempel registere om brukeren swiper til høyre eller venstre og da slette oppgaven.
 
-## Oppgave 8
+## Oppgave 9
 
 Lag en kul animasjon som gjør at brukeren får følelsen av oppgaven blir borte. Du kan for eksempel kaste den til en av sidene.
 
-## Oppgave 9
+## Oppgave 10
 
 Gjør det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en checkbox. Persister dette ved hjelp av persiastence.js.

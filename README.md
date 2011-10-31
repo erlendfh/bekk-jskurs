@@ -16,8 +16,7 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 # Oppgaver
 
 Før du begynner med oppgavene kan det være lurt å se kjapt igjennom http://slides.html5rocks.com/
-
-Det er smart å ha denne siden oppe for å se tips og triks.
+Det er smart å ha denne siden lett tilgjengelig for å se tips og triks.
 ## Overordned oppgave
 
 I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS slik at den blir enkel å forstå og bruke på mobil
@@ -25,7 +24,6 @@ I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS
 ## Oppgave 1
 
 Last ned [oppgavekoden](https://github.com/erlendfh/bekk-jskurs/zipball/master) (zip)
-
 Pakk den ut i katalogen du valgte å serve Opera-webserveren fra.
 
 ## Oppgave 2

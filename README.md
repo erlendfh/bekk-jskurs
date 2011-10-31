@@ -30,7 +30,8 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 
 ## Oppgave 3
 
-Åpne url'en Opera har opprettet for deg på en mobil. (Oppgitt i "Single-click login")
+Åpne url'en Opera har opprettet for deg på en mobil. Typisk http://$$$$.$$$$$.operaunite.com/webserver/content/ (Oppgitt i "Single-click login")
+
 Verifiser at teksten "Hei, jeg skal bli en mobilside når jeg blir stor" står skrevet.
 
 ## Oppgave 4

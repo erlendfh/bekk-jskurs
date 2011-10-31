@@ -59,7 +59,7 @@ Denne oppgaven dreier seg i hovedsak om å legge til funksjonalitet i task.js ve
 
 ## Oppgave 6
 
-Nå som brukeren kan legge til oppgaver, ønsker vi at brukeren skal kunne se oppgavene som blir lagt til via input-feltet. I denne oppgaven skal man lage funksjonalitet for render-funksjonen og taskHTML-funksjonen. Disse to funksjonene skal lage html som man skal sette på liste-elementet man laget i oppgave 4.
+Nå som brukeren kan legge til oppgaver, ønsker vi at brukeren skal kunne se oppgavene som blir lagt til via input-feltet. I denne oppgaven skal man lage funksjonalitet for render-funksjonen og taskHTML-funksjonen. Disse to funksjonene skal bygge opp html av de oppgavene som man har lagret. Denne html'en skal så settes på liste-elementet fra oppgave 4.
 
 ## Oppgave 7
 

@@ -54,15 +54,18 @@ På http://www.html5rocks.com/en/mobile/mobifying.html#toc-meta kan du lese mer 
 
 Ved hjelp av task.js, persistence.js, zepto.js filene skal du gjøre det mulig for brukere å legge til oppgaver i ToDo-listen
 
+Det er fornuftig å første sette seg inn i js-filene og hva som allerede finnes av funksjonalitet. Zepto er et JavaScript-rammeverk for mobile WebKit nettlesere som du finner mer om på http://zeptojs.com/.
+Denne oppgaven dreier seg i hovedsak om å legge til funksjonalitet i task.js ved å lage funksjonalitet for addTask-funksjonen og initializeBindings-funksjonen. Disse to funksjonen binder sammen input-feltet fra oppgave 4 med det å legge til til en task.
+
 ## Oppgave 6
 
-Nå som brukeren kan legge til oppgaver ønsker vi at brukeren skal kunne se oppgavene som blir lagt til i stedet for den dynamiske listen. Lag derfor en dynamisk liste som blir fyllt med oppgavene som ligger lagret i localstorage ved hjelp av persistence.js
+Nå som brukeren kan legge til oppgaver, ønsker vi at brukeren skal kunne se oppgavene som blir lagt til via input-feltet. I denne oppgaven skal man lage funksjonalitet for render-funksjonen og taskHTML-funksjonen. Disse to funksjonene skal lage html som man skal sette på liste-elementet man laget i oppgave 4.
 
 ## Oppgave 7
 
 En viktig del av utvikling for mobil er å lage applikasjoner som er enkle og brukbare. Animasjoner gjør både applikasjonen mer attraktiv og gir brukeren tilbakemelding om at ting skjer når han trykker.
 
-Vi ønsker at du i denne oppgaven legger til animasjoner på legg til oppgaver som du lagde i oppgave 3. Zepto.js har en funksjon som heter "anim" kan brukes til dette. Ett eksempel på bruk av denne funksjonen kan være:
+Vi ønsker at du i denne oppgaven legger til animasjoner når man legger til en ny oppgave i lista via input-feltet.. Zepto.js har en funksjon som heter "anim" kan brukes til dette. Ett eksempel på bruk av denne funksjonen kan være:
 
 $('div').anim({ translate3d: '10px, 20px, 30px'}, 2, 'ease-out 1ms', function() {
 	/* hva skal gjøres når animasjonen er ferdig */
@@ -80,4 +83,4 @@ Lag en kul animasjon som gjør at brukeren får følelsen av oppgaven blir borte
 
 ## Oppgave 10
 
-Gjør det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en checkbox. Persister dette ved hjelp av persiastence.js.
+Gjør det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en checkbox. Persister dette ved hjelp av persistence.js.

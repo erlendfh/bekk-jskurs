@@ -25,7 +25,8 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 2. Gå til http://unite.opera.com/application/192/ installer applikasjonen Web Server. Du må først lage en konto og registre deg, men det går kjapt unna.
 3. Følg oppsett og velg hvilken katalog Web Server skal serve innholdet fra. Velg en katalogen bekk-jskurs/oppgave.
 4. Etter at installasjonen er ferdig, starter Web Server opp. Innholdet på din lokale web server blir nå listet opp. På høyre side vises url'en til din applikasjon som du kan browse deg til på din lokale maskin eller på din mobiltelefon. Browseren skal være en webkit-browser som for eksempel Chrome eller Safari. Chrome kan du laste ned fra: http://www.google.com/chrome . Safari kan du laste ned fra: http://www.apple.com/safari/download/
-5. Du er nå klar for å sette i gang med oppgavene.
+5. Endre i høyremenyen og sett til Public
+6. Du er nå klar for å sette i gang med oppgavene.
 
 ## Oppgave 3
 

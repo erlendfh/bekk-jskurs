@@ -9,7 +9,7 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 
 1. Gå til http://opera.no og installer nettleseren om du ikke allerede har denne på din maskin.
 2. Gå til http://unite.opera.com/application/192/ installer applikasjonen Web Server. Du må først lage en konto og registre deg, men det går kjapt unna.
-3. Følg oppsett og velg hvilken katalog Web Server skal serve innholdet fra. Velg mappen oppgaver som ligger i katalogen som koden ble pakket ut til. 
+3. Følg oppsett og velg hvilken katalog Web Server skal serve innholdet fra. Velg en mappe som du vil løse oppgavene fra. 
 4. Etter at installasjonen er ferdig, starter Web Server opp. Innholdet på din lokale web server blir nå listet opp. På høyre side vises url'en til din applikasjon som du kan browse deg til på din lokale maskin eller på din mobiltelefon. Browseren skal være en webkit-browser som for eksempel Chrome eller Safari. Chrome kan du laste ned fra: http://www.google.com/chrome . Safari kan du laste ned fra: http://www.apple.com/safari/download/
 5. Du er nå klar for å sette i gang med oppgavene.
 		
@@ -17,6 +17,7 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 
 Før du begynner med oppgavene kan det være lurt å se kjapt igjennom http://slides.html5rocks.com/
 
+Det er smart å ha denne siden oppe for å se tips og triks.
 ## Overordned oppgave
 
 I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS slik at den blir enkel å forstå og bruke på mobil
@@ -24,6 +25,7 @@ I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS
 ## Oppgave 1
 
 Last ned [oppgavekoden](https://github.com/erlendfh/bekk-jskurs/zipball/master) (zip)
+
 Pakk den ut i katalogen du valgte å serve Opera-webserveren fra.
 
 ## Oppgave 2

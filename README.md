@@ -16,7 +16,7 @@ Slides kan du se [her](http://erlendfh.github.com/bekk-jskurs).
 
 ## Rammeverk
 
-- oppgave/js/frameworks/zepto.js -- Det finnes mange forskjellige rammeverk for mobil javascript utvikling. I dette kurset bruker vi zepto.js. Denne filen er grei å bruke som en referanse til hvilke metoder som finnes i rammeverket og om du eventuelt ønsker å finne ut hvordan det fungerer
+- oppgave/js/frameworks/zepto.js -- Det finnes mange forskjellige rammeverk for mobil javascript utvikling. I dette kurset bruker vi zepto.js. Zepto er et JavaScript-rammeverk for mobile WebKit nettlesere som du finner mer om på http://zeptojs.com/. Denne filen er grei å bruke som en referanse til hvilke metoder som finnes i rammeverket og om du eventuelt ønsker å finne ut hvordan det fungerer
 - oppgave/js/frameworks/persistence.js -- Wrapper for å lagre enkle javascript objekter i localstorage
 
 ## Din javascript
@@ -63,6 +63,8 @@ For å vise innholdet av applikasjonen enten lokalt på din datamaskin eller på
 5. Endre i høyremenyen og sett til Public
 6. Du er nå klar for å sette i gang med oppgavene.
 
+PS. Om du allerde har en annen webserver installert eller foretrekker en annen så kan du bruke denne.
+
 ## Oppgave 3
 
 Åpne url'en Opera har opprettet for deg på en mobil. Typisk http://$$$$.$$$$$.operaunite.com/webserver/content/ (Oppgitt i "Single-click login")
@@ -71,7 +73,7 @@ Verifiser at teksten "Hei, jeg skal bli en mobilside når jeg blir stor" står s
 
 ## Oppgave 4
 
-Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulator eller mobilenhet av typen Android eller iPhone. En statisk liste i HTML lages ved å bruke ul-tag'en som står for unordered list. Hvert element i lista legges til ved å bruke li-tag'en. En liste kan for eksempel se slik ut:
+Ved hjelp av html og metatags skal du vise en statisk ToDo-liste på en simulator eller mobilenhet av typen Android eller iPhone. En statisk liste i HTML kan lages ved å bruke ul-tag'en som står for unordered list. Hvert element i lista legges til ved å bruke li-tag'en. En liste kan for eksempel se slik ut:
 	
 	<ul>
 		<li>bil</li>
@@ -89,8 +91,11 @@ På http://www.html5rocks.com/en/mobile/mobifying.html#toc-meta kan du lese mer 
 
 Ved hjelp av task.js, persistence.js, zepto.js filene skal du gjøre det mulig for brukere å legge til oppgaver i ToDo-listen
 
-Det er fornuftig å første sette seg inn i js-filene og hva som allerede finnes av funksjonalitet. Zepto er et JavaScript-rammeverk for mobile WebKit nettlesere som du finner mer om på http://zeptojs.com/.
-Denne oppgaven dreier seg i hovedsak om å legge til funksjonalitet i task.js ved å lage funksjonalitet for addTask-funksjonen og initializeBindings-funksjonen. Disse to funksjonen binder sammen input-feltet fra oppgave 4 med det å legge til til en task.
+Det er fornuftig å første sette seg inn i js-filene og hva som allerede finnes av funksjonalitet. 
+
+Denne oppgaven dreier seg i hovedsak om å legge til funksjonalitet i task.js ved å lage funksjonalitet for addTask-funksjonen og initializeBindings-funksjonen. 
+
+Det kan være lurt å lage et input felt som gir brukeren mulighet til å skrive inn en oppgave. 
 
 ## Oppgave 6
 

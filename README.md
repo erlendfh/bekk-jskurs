@@ -141,3 +141,9 @@ Gjør det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en c
 ## Fullført?
 
 Å neida! Ta kontakt med en av oss så skal vi gi deg en utfordring eller to!;)
+
+Eksempler på oppgaver kan være: 
+1. Støtte for flere felt
+2. Et detalj view for hver enkelt oppgave
+3. iPad støtte. Gjør den pen på større skjerm
+4. Prioritert liste - La brukeren velge rekkefølge på oppgavene

@@ -23,8 +23,7 @@
       this.inputField.bind('blur', function(event) {
         that.addTask({
           text: event.srcElement.value,
-          done: false,
-          date: {}
+          done: false
         });
 
         event.srcElement.value = '';

@@ -43,7 +43,22 @@ var objekter = persistence.findAll();
 
 ### Tasks
 
-Mesteparten av appen kommer til å ligge i js/view/tasks.js. Her har vi laget et Tasks-objekt som tar inn HTML-listen din, Persistenceobjektet, og HTML-inputfeltet. For å hente HTML-elementer fra siden (DOM'en) kan du bruke Zepto sin $-funksjon slik: $(#id_på_elementet). 
+Mesteparten av appen kommer til å ligge i js/view/tasks.js. Her har vi laget et Tasks-objekt som tar inn HTML-listen din, Persistenceobjektet, og HTML-inputfeltet. For å hente HTML-elementer fra siden (DOM'en) kan du bruke Zepto sin $-funksjon slik: $(#id_på_elementet).
+
+#### initializeBindings
+Her kan du legge på eventlistener's på f.eks. inputfelter slik at JavaScriptkode blir kjørt når eventet skjer. F.eks. $("#id").live("change", function(event){// Håndter event});
+
+#### addTask(task)
+Denne funksjonen tar inn en task (JavaScriptobjekt eks. {text: "Kjøp melk", done: false}), legger den inn i LocalStorage og viser den i oppgavelista på siden. Her kan du være kreativ og legge på en slide-animasjon f.eks.
+
+#### removeTask(taskId)
+Denne skal kalles når brukeren vil slette en oppgave. Dette gjøre også vha. LocalStorage
+
+#### render
+Denne funksjonen har ansvaret for å tegne opp alle oppgaveelementene. Du må dermed hente ut alle oppgavene fra LocalStorage og lage en string med html for alle sammen. Deretter sette denne inn i oppgavelisteelementet i HTML'en.
+
+#### taskHTML(task)
+Her kan du lage en string med et li-elementet for en spesifikk oppgave. Denne kan du så bruke i render().
 
 I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS slik at den blir enkel å forstå og bruke på mobil
 

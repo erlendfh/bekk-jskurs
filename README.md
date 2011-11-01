@@ -27,9 +27,23 @@ Slides kan du se [her](http://erlendfh.github.com/bekk-jskurs).
 # Oppgaver
 
 Før du begynner med oppgavene kan det være lurt å se kjapt igjennom http://slides.html5rocks.com/
-Det er smart å ha denne siden lett tilgjengelig for å se tips og triks.
+Det er smart å ha denne siden lett tilgjengelig for å se tips og triks. Prating og samarbeid med folka rundt deg er lurt! LF er vedlagt, men vi har lyst til at du skal tenke sjæl.
 
-## Overordned oppgave
+## Overordnet oppgave
+
+Vi skal lage en oppgaveliste med HTML, JavaScript og CSS som funker rett i browseren på iPhone og Android. Med HTML5 ble det introdusert en mulighet for å lagre data fra browseren på telefonen. Dette kalles LocalStorage og vi skal bruke dette for å lagre oppgavene. Dermed trenger vi ingen webserver, alt skjer på telefonen.
+
+### LocalStorage
+
+Vi har allerede laget et lite wrapper-API for LocalStorage som dere skal bruke. API'et inneholder funksjoner for å lagre, slette og hente ett eller flere JavaScriptobjekter fra LocalStorage.
+
+var persistence = new reminders.Persistence("tasks");
+
+var objekter = persistence.findAll();
+
+### Tasks
+
+Mesteparten av appen kommer til å ligge i js/view/tasks.js. Her har vi laget et Tasks-objekt som tar inn HTML-listen din, Persistenceobjektet, og HTML-inputfeltet. For å hente HTML-elementer fra siden (DOM'en) kan du bruke Zepto sin $-funksjon slik: $(#id_på_elementet). 
 
 I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS slik at den blir enkel å forstå og bruke på mobil
 

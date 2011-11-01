@@ -54,11 +54,12 @@ Denne funksjonen tar inn en task (JavaScriptobjekt eks. {text: "Kjøp melk", don
 #### removeTask(taskId)
 Denne skal kalles når brukeren vil slette en oppgave. Dette gjøre også vha. LocalStorage
 
+#### taskHTML(task)
+Her kan du lage en string med et li-elementet for en spesifikk oppgave. Denne kan du så bruke i render().
+
 #### render
 Denne funksjonen har ansvaret for å tegne opp alle oppgaveelementene. Du må dermed hente ut alle oppgavene fra LocalStorage og lage en string med html for alle sammen. Deretter sette denne inn i oppgavelisteelementet i HTML'en.
 
-#### taskHTML(task)
-Her kan du lage en string med et li-elementet for en spesifikk oppgave. Denne kan du så bruke i render().
 
 I hver oppgave bør man bruke tid på å tilpasse applikasjonen ved hjelp av CSS slik at den blir enkel å forstå og bruke på mobil
 

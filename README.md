@@ -137,3 +137,7 @@ Lag en kul animasjon som gjør at brukeren får følelsen av oppgaven blir borte
 ## Oppgave 10
 
 Gjør det mulig for brukeren og registere at oppgaven er gjort ved hjelp av en checkbox. Persister dette ved hjelp av persistence.js.
+
+## Fullført?
+
+Å neida! Ta kontakt med en av oss så skal vi gi deg en utfordring eller to!;)

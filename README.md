@@ -2,7 +2,28 @@
 Dine første steg mot en mobil fremtid på www
 
 Slides kan du se [her](http://erlendfh.github.com/bekk-jskurs).
-	
+
+# Struktur
+
+## HTML
+
+- oppgave/index.html -- Her putter du din HTML kode
+
+## CSS filer
+
+- oppgave/css/base.css -- Enkelt styling av vanlig HTML elementer. Trenger ikke å redigeres
+- oppgave/css/styles.css -- Her putter du din CSS kode 
+
+## Rammeverk
+
+- oppgave/js/frameworks/zepto.js -- Det finnes mange forskjellige rammeverk for mobil javascript utvikling. I dette kurset bruker vi zepto.js. Denne filen er grei å bruke som en referanse til hvilke metoder som finnes i rammeverket og om du eventuelt ønsker å finne ut hvordan det fungerer
+- oppgave/js/frameworks/persistence.js -- Wrapper for å lagre enkle javascript objekter i localstorage
+
+## Din javascript
+
+- oppgave/view/globals.js -- Hjelpe objekter ligger her
+- oppgave/view/tasks.js -- Her kan du putte din javascript kode
+
 # Oppgaver
 
 Før du begynner med oppgavene kan det være lurt å se kjapt igjennom http://slides.html5rocks.com/
